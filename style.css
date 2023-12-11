@@ -1,0 +1,234 @@
+:root {
+  /* Primary */
+  --primary-800: #f5c527;
+  --primary-600: #2563eb;
+  --primary-200: #3498db;
+
+  /* Background */
+  --background-1: #191a1b;
+  --background-2: #3498db;
+  --background-3: #3498db;
+
+  /* Text */
+  --text-primary: #3498db;
+  --text-secondary: #6a80a7;
+  --primary-200: #3498db;
+
+  --pink: #f9f2de;
+  --blue: #ececec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: var(--background-1);
+  font-family: "Open Sans" !important;
+}
+a {
+  text-decoration: none !important;
+  color: var(--background-1) !important;
+}
+.fs-7 {
+  font-size: 14px;
+}
+.fs-8 {
+  font-size: 12px;
+}
+.bg-black {
+  background-color: #000 !important;
+}
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+.bg-blue {
+  background-color: var(--blue) !important;
+}
+.text-black {
+  color: #000 !important;
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.auth-container {
+  width: 100%;
+  min-height: 100vh;
+}
+.auth-container .left {
+  width: 56%;
+  background: url("./images/sign-in-img.png") no-repeat center center/cover;
+}
+.forgot-password .left {
+  background: url("./images/reset-password-img.png") no-repeat center
+    center/cover !important;
+}
+.reset-password .left {
+  background: url("./images/reset-password-img2.png") no-repeat center
+    center/cover !important;
+}
+.create-account .left {
+  background: url("./images/create-account-img.png") no-repeat center
+    center/cover !important;
+}
+.auth-container .right {
+  width: 44%;
+  max-width: 800px;
+  padding: 1rem 7rem;
+}
+.create-account .right {
+  padding: 1rem 2.1rem;
+}
+
+.input-item,
+button {
+  border-radius: 0.75rem !important;
+  border: 2px solid var(--background-1, #191a1b);
+  padding: 0.75rem;
+}
+.input-item input {
+  border: none;
+  outline: none;
+}
+.input-item input,
+.input-item input::placeholder,
+.create-account .input-item::placeholder {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--background-1);
+}
+.input-item:focus-within {
+  content: "";
+  display: block;
+  border: 2px solid var(--primary-600);
+}
+.create-account .input-item {
+  padding: 0.7rem 0.75rem;
+  color: var(--background-1);
+  margin: 0 !important;
+}
+.create-account .input-item::placeholder {
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  width: 1.4rem;
+  height: 1.4rem;
+  -webkit-appearance: none;
+}
+.checkbox-sm {
+  border: 1px solid #000 !important;
+
+  width: 0.9rem !important;
+  height: 0.9rem !important;
+}
+
+input[type="checkbox"]:hover {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--background-1);
+  opacity: 1;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+.checkbox-sm::before {
+  height: 9px !important;
+}
+
+input[type="checkbox"] + span,
+.form-link {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  user-select: none;
+}
+.checkbox-sm + span {
+  font-size: 12px !important;
+}
+.input-password {
+  position: relative;
+}
+.input-password button {
+  border: none;
+  background: none;
+}
+.eye {
+  cursor: pointer;
+}
+.line {
+  width: 33%;
+  background-color: var(--background-1);
+  height: 0.0625rem;
+}
+.btn-outline {
+  display: block;
+  text-align: center;
+  border-radius: 0.75rem;
+  border: 1px solid var(--greyscale-200, #e2e8f0);
+  background: var(--additional-white, #fff);
+  padding: 0.75rem 1rem;
+  transition: background 0.3s ease;
+
+  font-family: "Inter" !important;
+  font-size: 1rem;
+}
+.btn-outline:hover {
+  background: #e2e8f054;
+}
+
+@media screen and (max-width: 1200px) {
+  .auth-container .right {
+    padding: 1rem 4rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .auth-container .right {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .auth-container {
+    flex-direction: column;
+  }
+  .auth-container .left {
+    width: 100%;
+    height: 30vh;
+  }
+  .auth-container .left a {
+    margin-bottom: 0 !important;
+  }
+  .auth-container .right {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+}
