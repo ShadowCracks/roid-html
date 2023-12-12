@@ -91,6 +91,9 @@ a {
 .p-2-5 {
   padding: 12px;
 }
+.underline {
+  text-decoration: underline !important;
+}
 
 .auth-container {
   width: 100%;
@@ -305,7 +308,12 @@ header nav {
 .community-card {
   width: 32.5% !important;
 }
-
+.community-pics {
+  row-gap: 1px;
+}
+.community-pics img {
+  width: 25%;
+}
 @media screen and (max-width: 1200px) {
   .auth-container .right {
     padding: 1rem 4rem;
@@ -315,6 +323,9 @@ header nav {
   }
   .nav-btns {
     display: none !important;
+  }
+  .community-card {
+    width: 48.5% !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -342,5 +353,11 @@ header nav {
   .auth-container .right {
     width: 95%;
     padding: 2rem 1rem;
+  }
+  .community-card {
+    width: 100% !important;
+  }
+  .community-pics img {
+    width: 32%;
   }
 }
