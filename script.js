@@ -29,7 +29,7 @@ function generateHeader(text) {
   <div class="header-container">
         <header class="bg-bg1 text-white">
           <div
-            class="header-wrapper mx-auto d-flex align-items-center justify-content-between"
+            class="main-wrapper header-wrapper mx-auto d-flex align-items-center justify-content-between"
           >
             <div class="navbar flex align-items-center gap-4">
               <nav class="d-flex align-items-center gap-5">
@@ -37,18 +37,21 @@ function generateHeader(text) {
                 <a href="#" class="text-white fw-medium">Steroids</a>
                 <a href="#" class="text-white fw-medium">Community</a>
               </nav>
-              <label
-                class="header-search p-2 px-3 d-flex align-items-center"
-                for="email"
-              >
-                <img src="images/icon-search.svg" alt="" />
-                <input
-                  class="mx-2"
-                  type="text"
-                  placeholder="Search"
-                  id="search"
-                />
-              </label>
+              <form>
+                <label
+                  class="header-search p-2 px-3 d-flex align-items-center"
+                  for="search"
+                >
+                  <img src="images/icon-search.svg" alt="" />
+                  <input
+                    class="mx-2"
+                    type="text"
+                    placeholder="Search"
+                    id="search"
+                  />
+                </label>
+              <form>
+              
             </div>
             <div class="flex gap-3 nav-btns">
               <a

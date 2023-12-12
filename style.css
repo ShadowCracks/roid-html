@@ -10,14 +10,19 @@
   --background-3: #eee8d3;
   --background-4: #dcdcdc;
   --background-5: #c4c4c4;
+  --background-6: rgba(217, 217, 217, 0.41);
+  --background-7: #e2e2e2;
 
   /* Text */
   --text-primary: #3498db;
   --text-secondary: #6a80a7;
+  --text-gray: #666;
+
   --primary-200: #3498db;
 
   --pink: #f9f2de;
   --blue: #ececec;
+  --green: #4bed7d;
 }
 
 * {
@@ -58,6 +63,9 @@ a {
 .bg-blue {
   background-color: var(--blue) !important;
 }
+.bg-green {
+  background-color: var(--green) !important;
+}
 .bg-bg1 {
   background-color: var(--background-1);
 }
@@ -69,6 +77,12 @@ a {
 }
 .bg-bg5 {
   background-color: var(--background-5);
+}
+.bg-bg6 {
+  background-color: var(--background-6);
+}
+.bg-bg7 {
+  background-color: var(--background-7);
 }
 .text-black {
   color: #000 !important;
@@ -82,6 +96,9 @@ a {
 .text-secondary {
   color: var(--text-secondary);
 }
+.text-gray {
+  color: var(--text-gray);
+}
 .rounded-lg {
   border-radius: 10px;
 }
@@ -94,7 +111,22 @@ a {
 .underline {
   text-decoration: underline !important;
 }
+.w-80px {
+  width: 80px !important;
+}
+.w-80 {
+  width: 80% !important;
+}
+.min-h-49 {
+  min-height: 49px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 
+.main-wrapper {
+  width: 80% !important;
+}
 .auth-container {
   width: 100%;
   min-height: 100vh;
@@ -249,7 +281,6 @@ header nav {
   font-family: "Lato" !important;
 }
 .header-wrapper {
-  width: 80%;
   height: 68px;
 }
 .header-container section {
@@ -314,6 +345,88 @@ header nav {
 .community-pics img {
   width: 25%;
 }
+.community-card-header {
+  min-height: 36px !important;
+}
+.rounded-sm-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.2rem 0;
+  min-width: 87px;
+  border-radius: 36px;
+  border: 1px solid #666;
+  transition: all 0.25s ease;
+}
+.rounded-sm-btn:hover {
+  opacity: 0.875;
+  background: #f5f5f5;
+}
+.list-options select {
+  border: none;
+}
+.circle-tag {
+  width: 24px;
+  height: 24px;
+}
+.list-item_number {
+  width: 12%;
+}
+.list-item_content {
+  width: 56%;
+  border-left: 1px dotted #847d67;
+  padding-left: 2rem;
+}
+.list-item_points {
+  width: 31%;
+  border-left: 1px dotted #847d67;
+  padding-left: 2rem;
+}
+.list-pagination span {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid var(--grays-black-100, #222e42);
+  background: var(--White, #fff);
+  transition: text-decoration 0.275s ease;
+}
+.list-pagination span:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+.list-pagination span.active {
+  background: var(--background-1);
+  color: white;
+}
+.main-section {
+  gap: 1.85rem;
+  padding-bottom: 3rem;
+}
+.main-section aside {
+  width: 325px;
+}
+.aside-card {
+  padding: 0.85rem;
+}
+.aside-card_subcard {
+  padding: 0.65rem;
+}
+.aside-card_subcard p {
+  line-height: 16px;
+}
+.aside-card h4 {
+  font-size: 18px !important;
+  font-weight: 800;
+}
+.aside-tags {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  /* min-width: 24px;
+  min-height: 24px; */
+}
+
 @media screen and (max-width: 1200px) {
   .auth-container .right {
     padding: 1rem 4rem;
@@ -327,13 +440,30 @@ header nav {
   .community-card {
     width: 48.5% !important;
   }
+  .main-wrapper {
+    width: 95% !important;
+  }
 }
 @media screen and (max-width: 992px) {
+  html {
+    font-size: 95%;
+  }
   .auth-container .right {
     padding: 1rem 2rem;
   }
   .navbar {
     display: none !important;
+  }
+  .main-section {
+    flex-direction: column;
+  }
+  .main-section aside {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-section img {
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -359,5 +489,21 @@ header nav {
   }
   .community-pics img {
     width: 32%;
+  }
+  .list-item_content {
+    padding-left: 1rem;
+  }
+  .list-item_points {
+    padding-left: 1rem;
+    justify-content: center;
+  }
+  .list-item_number h2 {
+    font-size: 1.2rem !important;
+  }
+  .list-item_number span {
+    font-size: 0.7rem !important;
+  }
+  .list-item_points span {
+    font-size: 0.5rem !important;
   }
 }
