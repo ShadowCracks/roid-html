@@ -398,6 +398,12 @@ header nav {
   justify-content: space-between;
   /* width: fit-content; */
 }
+.source-talk .list-item {
+  padding: 0.5rem 1rem !important;
+}
+.source-talk .list-item:hover {
+  opacity: 0.9;
+}
 .list-item_content-wrapper {
   width: 78%;
 }
@@ -435,6 +441,9 @@ header nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.source-talk .list-item_points {
+  min-height: auto !important;
 }
 .min-w-1e {
   min-width: 90px;
@@ -511,7 +520,7 @@ header nav {
   padding: 0.85rem;
 }
 .aside-card_subcard {
-  padding: 0.65rem;
+  padding: 0.5rem 0.65rem;
 }
 .aside-card_subcard p {
   line-height: 16px;
