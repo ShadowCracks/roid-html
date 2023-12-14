@@ -137,6 +137,9 @@ a {
 .flex-1 {
   flex: 1;
 }
+.line-h-sm {
+  line-height: 12px !important;
+}
 
 .main-wrapper {
   width: 80% !important;
