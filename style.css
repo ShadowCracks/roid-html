@@ -624,6 +624,36 @@ header nav {
 .source-review-inside {
   gap: 1rem;
 }
+.aside-card_subcard_split {
+  padding: 0.6rem !important;
+}
+.aside-card_subcard_split span {
+  width: 100%;
+  display: block;
+  border-top: 1px dashed black;
+  margin-top: 0.4rem;
+  padding-top: 0.15rem;
+}
+.item-detail_content-text {
+  margin-top: 0.7rem;
+}
+.item-detail_content-text h5 {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+  margin: 0.585rem 0 !important;
+}
+.item-detail_content-text p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 166.667% */
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+  margin: 0.4rem 0;
+}
 @media screen and (max-width: 1200px) {
   .auth-container .right {
     padding: 1rem 1.85rem;
