@@ -42,16 +42,16 @@ a {
   color: var(--background-1) !important;
 }
 .fs-7 {
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
 }
 .fs-8 {
-  font-size: 13px;
+  font-size: 0.813rem; /* 13px */
 }
 .fs-9 {
   font-size: 0.75rem; /* 12px */
 }
 .fs-9-5 {
-  font-size: 0.688rem; /* 12px */
+  font-size: 0.688rem; /* 11px */
 }
 .fs-10 {
   font-size: 10px;
@@ -373,7 +373,7 @@ header nav {
   transition: all 0.25s ease;
 }
 .rounded-sm-btn {
-  padding: 0.2rem 0;
+  padding: 0.25rem 0.75rem;
   min-width: 87px;
   border: 1px solid #666;
 }
@@ -399,6 +399,7 @@ header nav {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   justify-content: space-between;
+  align-items: center;
   /* width: fit-content; */
 }
 .source-talk .list-item {
@@ -667,8 +668,103 @@ header nav {
   text-transform: capitalize;
   margin: 0.4rem 0;
 }
+.steroid-talk-item-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 60px;
+  object-fit: contain;
+}
+.steroid-talk-item .list-item_points {
+  border-left: none !important;
+  padding-left: 0 !important;
+  justify-content: flex-end;
+  width: 25% !important;
+  min-width: 150px;
+  gap: 0.5rem;
+}
+.steroid-talk-item .list-item_points span {
+  font-weight: 600 !important;
+}
+.steroid-talk-item .list-item_content {
+  width: 75%;
+  word-break: break-all;
+}
+.steroid-talk-item .review-stars img {
+  width: 12px;
+}
+.steroild-talk_content_text {
+  gap: 0.7rem;
+  margin-left: 0.4rem;
+}
+.aside-card select {
+  background: transparent !important;
+  color: #666;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.7px;
+  padding-right: 2rem !important;
+  border-radius: 36px !important;
+  border: 1px solid #666;
+  padding: 0.5rem 1rem !important;
+  width: 100% !important;
+}
+.aside-card select:focus {
+  border-radius: 36px !important;
+  border: 1px solid #666;
+}
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100% !important;
+}
+
+.custom-dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.custom-dropdown select:hover {
+  opacity: 0.85;
+}
+
+.custom-dropdown::after {
+  content: "";
+  background-image: url("images/icon-chevron-down.svg"); /* Replace with the path to your image */
+  background-size: contain; /* Adjust as needed */
+  background-repeat: no-repeat;
+  width: 20px; /* Adjust the width of the image */
+  height: 20px; /* Adjust the height of the image */
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-30%);
+}
+.aside-card-dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.aside-card-dropdowns button {
+  padding: 0.5rem;
+  border-radius: 60px !important;
+
+  color: #f5c527;
+
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
 @media screen and (max-width: 1280px) {
-  .main-wrapper {
+  .main-wrapper,
+  .bread-crumbs {
     width: 95% !important;
   }
 }
@@ -708,9 +804,9 @@ header nav {
     margin: 0 auto;
     max-width: none;
   }
-  .main-section img {
-    width: fit-content;
-    margin: 0 auto;
+  aside > img {
+    width: fit-content !important;
+    margin: 0 auto !important;
   }
   .list-item_points {
     max-width: 250px !important;
@@ -743,7 +839,7 @@ header nav {
   }
   .list-item {
     flex-direction: column;
-    gap: 0.75rem !important;
+    gap: 0.45rem !important;
   }
   .list-item_content {
     padding-left: 1rem;
@@ -751,6 +847,8 @@ header nav {
   .list-item_points {
     padding-left: 1rem;
     justify-content: center;
+    margin-top: 0;
+    padding-top: 0.5rem !important;
   }
   .list-item_number h2 {
     font-size: 1.2rem !important;
@@ -811,6 +909,11 @@ header nav {
   .item-detail_content-wrapper {
     width: 100% !important;
     max-width: 100% !important;
+  }
+  .steroid-talk-item,
+  .steroid-talk-item .list-item_content {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
 }
 @media screen and (max-width: 576px) {
