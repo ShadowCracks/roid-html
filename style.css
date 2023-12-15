@@ -14,6 +14,7 @@
   --background-6: rgba(217, 217, 217, 0.41);
   --background-7: #e2e2e2;
   --background-8: #eee;
+  --background-9: #555;
 
   /* Text */
   --text-primary: #3498db;
@@ -91,6 +92,9 @@ a {
 }
 .bg-bg8 {
   background-color: var(--background-8);
+}
+.bg-bg9 {
+  background-color: var(--background-9);
 }
 .text-black {
   color: #000 !important;
@@ -644,9 +648,14 @@ header nav {
 .aside-card_subcard_split span {
   width: 100%;
   display: block;
-  border-top: 1px dashed black;
-  margin-top: 0.4rem;
-  padding-top: 0.15rem;
+  padding: 0.1rem;
+  font-size: 0.65rem;
+}
+.aside-card_subcard_split p {
+  display: block !important;
+  border-bottom: 1px dashed black !important;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 .item-detail_content-text {
   margin-top: 0.7rem;
@@ -805,6 +814,51 @@ header nav {
 }
 .cycle-author-date > span {
   font-weight: bold !important;
+}
+.datatable {
+  /* border: 1px solid blue; */
+  border-radius: 10px !important;
+  border: 1px solid #666;
+  border-radius: 8px !important;
+}
+.datatable table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.datatable thead,
+.datatable tbody {
+  display: block;
+  padding: 0.5rem 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.datatable thead {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #666666be;
+}
+.datatable tbody tr {
+  border-bottom: 1px solid #666666be;
+  padding: 0.15rem 0;
+}
+.datatable tbody tr:last-child {
+  border-bottom: none;
+}
+.datatable th,
+.datatable td {
+  font-size: 0.8rem;
+  color: #505050;
+  width: 16%;
+  word-break: break-all;
+}
+.table-cell-w-10 {
+  width: 10% !important;
+}
+.datatable tr {
+  /* border: 1px solid pink; */
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1280px) {
   .main-wrapper,
