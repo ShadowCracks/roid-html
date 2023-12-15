@@ -692,7 +692,7 @@ header nav {
 .steroid-talk-item .review-stars img {
   width: 12px;
 }
-.steroild-talk_content_text {
+.steroid-talk_content_text {
   gap: 0.7rem;
   margin-left: 0.4rem;
 }
@@ -761,6 +761,50 @@ header nav {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
+}
+.steroid-cycle_content_text {
+  border-left: 1px dashed #847d67;
+  border-right: 1px dashed #847d67;
+  padding-left: 1.25rem;
+  padding-right: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: flex-start;
+  width: 100%;
+  word-break: break-all;
+}
+.steroid-cycle_content_images {
+  /* border: 1px solid blue; */
+  padding-right: 0.5rem;
+}
+.steroid-cycle-item .list-item_content {
+  gap: 1rem;
+  align-items: center;
+  border-left: none !important;
+  /* border: 1px solid orange; */
+  width: 100%;
+}
+.steroid-cycle-item .list-item_points {
+  border: none;
+  display: flex;
+  gap: 0.35rem;
+  width: 20% !important;
+  padding-right: 0.85rem;
+  /* border: 1px solid blue; */
+}
+.cycles-list .list-item {
+  padding: 0.35rem 0 !important;
+}
+.cycle-author-date {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+.cycle-author-date > span {
+  font-weight: bold !important;
 }
 @media screen and (max-width: 1280px) {
   .main-wrapper,
@@ -914,6 +958,17 @@ header nav {
   .steroid-talk-item .list-item_content {
     align-items: flex-start !important;
     justify-content: flex-start !important;
+  }
+  .steroid-cycle_content_text {
+    border-left: 1px dashed #847d67;
+    border-right: none !important;
+    padding-left: 1.25rem;
+    /* border-bottom: 1px dashed #847d67; */
+  }
+  .steroid-cycle-item .list-item_points {
+    border-top: 1px dashed #847d67;
+    padding: 0.3rem 1rem;
+    margin-top: 0.2rem;
   }
 }
 @media screen and (max-width: 576px) {
