@@ -117,6 +117,9 @@ a {
 .rounded-xl {
   border-radius: 15px;
 }
+.rounded-2xl {
+  border-radius: 20px;
+}
 .p-2-5 {
   padding: 12px;
 }
@@ -388,7 +391,7 @@ header nav {
 }
 .rounded-btn {
   padding: 0.4rem 1rem;
-  font-size: 0.845rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .list-options select {
@@ -986,6 +989,38 @@ header nav {
 .my-groups a:hover {
   opacity: 0.9;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+.profile-info_username {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+.btn-subscribe {
+  border-radius: 60px;
+  padding: 0.2rem 0.8rem;
+  background: var(--primary-800);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+.btn-subscribe:hover {
+  opacity: 0.915;
+}
+.tag-sm {
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 60px;
+  padding: 0.15rem 0.5rem;
+  text-align: center;
+}
+.members-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+.members-images img {
+  width: 24%;
+  max-width: 120px;
 }
 @media screen and (max-width: 1280px) {
   .main-wrapper,
