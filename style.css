@@ -417,6 +417,7 @@ header nav {
 }
 .list-item_number {
   /* width: 25%; */
+  min-width: 140px;
   padding-right: 1.25rem;
   gap: 0.6rem;
 }
@@ -453,6 +454,7 @@ header nav {
 .source-talk .list-item_points {
   min-height: auto !important;
 }
+
 .min-w-1e {
   min-width: 90px;
 }
@@ -466,7 +468,8 @@ header nav {
   min-width: 220px;
 }
 .min-w-5e {
-  min-width: 260px;
+  min-width: 280px;
+  justify-content: flex-end;
 }
 .container-grid {
   display: grid;
@@ -860,6 +863,34 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
+.source-talks-list .list-item_points {
+  min-height: auto !important;
+  /* border: 1px solid red; */
+  width: auto !important;
+  min-width: 270px !important;
+  justify-content: flex-end;
+  /* ########### CHANGE VALUE ABOVE !!!!!!!!!!!!!!!!!!! */
+}
+.textarea {
+  display: block;
+  width: 100% !important;
+}
+.text-area textarea {
+  width: 100%;
+  color: var(--background-1);
+  padding: 0.65rem;
+  font-size: 0.835rem;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+  border-color: var(--background-1) !important;
+  border-radius: 10px;
+}
+.text-area textarea::placeholder {
+  color: #555 !important;
+}
+.text-area textarea:focus {
+  outline-color: var(--background-1) !important;
+}
 @media screen and (max-width: 1280px) {
   .main-wrapper,
   .bread-crumbs {
@@ -949,7 +980,7 @@ header nav {
     padding-top: 0.5rem !important;
   }
   .list-item_number h2 {
-    font-size: 1.2rem !important;
+    font-size: 1.05rem !important;
     margin-top: 0.25rem !important;
   }
   .list-item_number span {
@@ -1023,6 +1054,9 @@ header nav {
     border-top: 1px dashed #847d67;
     padding: 0.3rem 1rem;
     margin-top: 0.2rem;
+  }
+  .list-item_number {
+    min-width: 60px;
   }
 }
 @media screen and (max-width: 576px) {
