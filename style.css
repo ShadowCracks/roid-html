@@ -305,6 +305,17 @@ input[type="checkbox"] + span,
 header nav {
   font-family: "Lato" !important;
 }
+.header-container {
+  padding-top: 68px;
+}
+.header-container header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  margin: 0 auto;
+  z-index: 99 !important;
+}
 .header-wrapper {
   height: 68px;
 }
