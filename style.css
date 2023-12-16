@@ -569,6 +569,7 @@ header nav {
 }
 .item-detail_img img {
   max-width: 100% !important;
+  height: 100% !important;
 }
 .item-detail_stats-wrapper {
   /* width: fit-content; */
@@ -588,6 +589,19 @@ header nav {
 .item-detail_stats > div {
   flex-basis: calc(50% - 20px); /* 50% width minus the gap */
   box-sizing: border-box;
+}
+.item-detail_stats-item > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8px;
+}
+.item-detail_stats-item > div span {
+  font-weight: 500 !important;
+}
+.item-detail_stats-item > div span:first-child {
+  font-weight: 800 !important;
 }
 .item-detail_content h5 {
   font-size: 1.125rem !important;
