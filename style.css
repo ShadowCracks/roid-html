@@ -891,6 +891,102 @@ header nav {
 .text-area textarea:focus {
   outline-color: var(--background-1) !important;
 }
+
+/* ######### Groups ######## */
+.groups {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.groups-aside {
+  width: 10% !important;
+  min-width: 220px !important;
+}
+.group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0.8rem;
+  gap: 0.5rem;
+  /* min-width: 180px;
+  max-width: 180px; */
+  max-width: 300px;
+  width: 24%;
+}
+.group-item .head-tag {
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px; /* 140% */
+  letter-spacing: -0.4px;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+}
+.group-item h4 {
+  text-align: center;
+
+  /* font-family: Public Sans; */
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 0;
+  margin: 0;
+}
+.group-item p {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
+}
+.group-item a {
+  transition: opacity 0.2s ease;
+}
+.group-item a:hover {
+  opacity: 0.85;
+}
+.group-item_author {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.my-groups {
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  padding: 1.1rem;
+}
+.my-groups p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.my-groups a {
+  background-color: var(--primary-800);
+  font-size: 0.725rem;
+  font-weight: 600;
+  display: block;
+  margin: 0.4rem 0;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.4rem 0;
+}
+.my-groups a:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
 @media screen and (max-width: 1280px) {
   .main-wrapper,
   .bread-crumbs {
@@ -912,6 +1008,10 @@ header nav {
   }
   .item-detail_stats-wrapper {
     width: 17%;
+  }
+  .groups-aside {
+    width: 5% !important;
+    min-width: 180px !important;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1058,6 +1158,13 @@ header nav {
   .list-item_number {
     min-width: 60px;
   }
+  .group-item {
+    width: 31%;
+  }
+  .groups-aside {
+    width: 100% !important;
+    min-width: none !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .list-item_number {
@@ -1079,5 +1186,9 @@ header nav {
   }
   .source-review-inside {
     gap: 1.85rem;
+  }
+  .group-item {
+    width: 100%;
+    max-width: 100%;
   }
 }
