@@ -2,6 +2,7 @@ function updateKarma(commentId, karmaChange) {
   const karmaAmountElement = document.getElementById("karmaAmount");
   const likeCountElement = document.getElementById("likeCount");
   const dislikeCountElement = document.getElementById("dislikeCount");
+  const karmaPointElement = document.querySelector(".comment-karma_point");
 
   const currentKarma = parseInt(karmaAmountElement.innerText);
   const currentLikes = parseInt(likeCountElement.innerText);
@@ -14,6 +15,16 @@ function updateKarma(commentId, karmaChange) {
   karmaAmountElement.innerText = newKarma;
   likeCountElement.innerText = newLikes;
   dislikeCountElement.innerText = newDislikes;
+
+  // Check if karma points are above 1000 and update the class
+  if (newKarma > 1000) {
+    karmaPointElement.classList.remove("bg-bg10");
+    karmaPointElement.classList.add("bg-primary-800");
+  } else {
+    // Reset the class if karma points go below 1000
+    karmaPointElement.classList.remove("bg-primary-800");
+    karmaPointElement.classList.add("bg-bg10");
+  }
 }
 
 const eye = document.querySelectorAll(".eye");
@@ -40,11 +51,11 @@ if (eye.length > 0) {
   }
 }
 
-function generateHeader(text) {
+function generateHeader(text, secondary_text, id) {
   const headerContainer = document.getElementById("header-container");
 
   const headerHTML = `
-  <div class="header-container">
+  <div class="header-container" id="${id ? id : ""}">
         <header class="bg-bg1 text-white">
           <div
             class="main-wrapper header-wrapper mx-auto d-flex align-items-center justify-content-between"
@@ -154,7 +165,8 @@ function generateHeader(text) {
         <section
           class="text-uppercase bg-primary-800 text-dark p-2 d-flex align-items-center justify-content-center fs-1"
         >
-          ${text}
+        <span class="text-center">${text}<span>
+        <span class="secondary-text">${secondary_text ?? ""}</span>
         </section>
       </div>
   `;
