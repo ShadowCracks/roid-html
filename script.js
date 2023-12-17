@@ -163,6 +163,7 @@ function generateHeader(text, secondary_text, id) {
           </div>
         </header>
         <section
+          id="title-section"
           class="text-uppercase bg-primary-800 text-dark p-2 d-flex align-items-center justify-content-center fs-1"
         >
         <span class="text-center">${text}<span>

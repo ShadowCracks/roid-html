@@ -327,7 +327,7 @@ header nav {
 .header-wrapper {
   height: 68px;
 }
-.header-container section {
+#title-section {
   height: 115px;
   font-size: 2.1875rem;
   font-weight: 800;
