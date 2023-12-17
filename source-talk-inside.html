@@ -104,11 +104,18 @@
                 >
               </div>
               <div class="review-list d-flex flex-column gap-3 mt-2 pt-2">
-                <div class="comment-item">
+                <div class="comment-item" id="comment1">
                   <div class="comment-head mb-2">
                     <div class="user-profile">
                       <img src="images/aside-profile-pic.png" alt="" />
                       <h6 class="m-0 fw-bold">User</h6>
+                      <span
+                        title="Comment Karma Point"
+                        class="comment-karma_point bg-bg10"
+                      >
+                        <img src="images/icon-karma.svg" alt="" />
+                        <span class="karma-amount" id="karmaAmount">122</span>
+                      </span>
                     </div>
                     <div class="tags flex align-items-center gap-2">
                       <span class="tag-status">new</span>
@@ -117,21 +124,26 @@
                   </div>
                   <p class="fs-9 m-0 mt-1">
                     600mg a week makes me hungry and vascular as fuck, is got
-                    for tendons so good with deca in a off season. Watchout for
-                    your rbc especially if u run high doses boldenone then its
-                    not mild anymore just run a mild or low dose and u get some
-                    benefits without any or low side effects.
+                    for tendons so good with deca in an off season. Watch out
+                    for your rbc especially if u run high doses boldenone then
+                    its not mild anymore just run a mild or low dose and u get
+                    some benefits without any or low side effects.
                   </p>
                   <div class="comment-footer">
                     <button class="rounded-btn">Reply</button>
                     <div class="like-dislike">
-                      <button class="like">
+                      <button class="like" onclick="updateKarma('comment1', 3)">
                         <img src="images/icon-like.svg" alt="" />
-                        <span class="like-number">12223</span>
+                        <span class="like-number" id="likeCount">12223</span>
                       </button>
-                      <button class="dislike">
+                      <button
+                        class="dislike"
+                        onclick="updateKarma('comment1', -3)"
+                      >
                         <img src="images/icon-dislike.svg" alt="" />
-                        <span class="dislike-number">322</span>
+                        <span class="dislike-number" id="dislikeCount"
+                          >322</span
+                        >
                       </button>
                     </div>
                   </div>

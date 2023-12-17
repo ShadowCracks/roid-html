@@ -1,3 +1,21 @@
+function updateKarma(commentId, karmaChange) {
+  const karmaAmountElement = document.getElementById("karmaAmount");
+  const likeCountElement = document.getElementById("likeCount");
+  const dislikeCountElement = document.getElementById("dislikeCount");
+
+  const currentKarma = parseInt(karmaAmountElement.innerText);
+  const currentLikes = parseInt(likeCountElement.innerText);
+  const currentDislikes = parseInt(dislikeCountElement.innerText);
+
+  const newKarma = currentKarma + karmaChange;
+  const newLikes = karmaChange > 0 ? currentLikes + 1 : currentLikes;
+  const newDislikes = karmaChange < 0 ? currentDislikes + 1 : currentDislikes;
+
+  karmaAmountElement.innerText = newKarma;
+  likeCountElement.innerText = newLikes;
+  dislikeCountElement.innerText = newDislikes;
+}
+
 const eye = document.querySelectorAll(".eye");
 
 if (eye.length > 0) {
