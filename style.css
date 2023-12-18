@@ -131,6 +131,11 @@ a {
 .p-2-5 {
   padding: 12px;
 }
+.py-1-5 {
+  padding-top: 0.465rem;
+  padding-bottom: 0.465rem;
+}
+
 .underline {
   text-decoration: underline !important;
 }
@@ -1411,6 +1416,104 @@ header nav {
 #home section {
   min-height: 190px !important;
 }
+.tab-trigger {
+  font-weight: 500;
+  display: inline-block;
+  opacity: 0.875;
+  border-bottom: 4.5px solid transparent;
+}
+.tab-trigger.active {
+  opacity: 1;
+
+  border-bottom: 4.5px solid black;
+}
+.tab-trigger:hover {
+  opacity: 1;
+}
+.user-dashboard .profile-card {
+  width: 25%;
+}
+.profile-card {
+  border-radius: 6px;
+  background: #f1f1f1;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1.5rem;
+  height: 100%;
+}
+.profile-card_header {
+  padding: 0 1rem;
+  margin-top: -35px;
+}
+.profile-card .color-bg {
+  display: block !important;
+  height: 65px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 6px 6px 0 0;
+}
+.visibility-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.visibility-status .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.visibility-status.online .dot {
+  background-color: #4bed7d;
+}
+.profile-card .username,
+.profile-card .about {
+  line-height: 6px;
+  margin: 0;
+  padding: 0;
+}
+.profile-card .username {
+  margin-top: 0.55rem;
+  font-weight: 700;
+}
+.profile-card .about {
+  margin-top: 0.55rem;
+  font-style: italic !important;
+  color: #6c7172;
+}
+.profile-card #info p {
+  padding: 0.12rem 0;
+  margin: 0;
+  font-size: 0.8rem;
+  color: #505050d2;
+}
+.profile-card .tab-content {
+  border-radius: 4px;
+  border: 0.5px solid #c4c4c4;
+  padding: 0.6rem;
+}
+.user-dashboard .main-tab-contents {
+  width: 75%;
+}
+#settings {
+  padding: 1rem;
+}
+#settings h4 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+#settings h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+#settings .input-item,
+#settings button {
+  border-radius: 4px !important;
+  border: 0.5px solid #999;
+  background: #fff;
+  padding: 0.5rem;
+}
+#settings .input-item:focus {
+  outline: 0.7px solid var(--primary-600);
+}
 @media screen and (max-width: 1280px) {
   .main-wrapper,
   .bread-crumbs,
@@ -1498,6 +1601,17 @@ header nav {
   }
   .info-col-gallery .workout-images img {
     width: 32.5% !important;
+  }
+  .user-dashboard .main-tab-contents {
+    width: 100%;
+  }
+  .user-dashboard .profile-card {
+    width: 100%;
+  }
+  #info,
+  .profile-card .tab-list {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1669,5 +1783,10 @@ header nav {
   }
   .tab-options {
     gap: 0rem;
+  }
+  #info,
+  .profile-card .tab-list {
+    width: 90%;
+    margin: 0 auto;
   }
 }
