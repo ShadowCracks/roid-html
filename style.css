@@ -714,7 +714,7 @@ header nav {
   margin: 0.585rem 0 !important;
 }
 .item-detail_content-text p {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 600;
   line-height: 18px; /* 166.667% */
@@ -1513,6 +1513,40 @@ header nav {
 }
 #settings .input-item:focus {
   outline: 0.7px solid var(--primary-600);
+}
+.filters {
+  /* gap: 0.65rem; */
+  column-gap: 0.6rem;
+  row-gap: 0.4rem;
+}
+.filters .filter-option {
+  border-radius: 36px;
+  border: 1px solid #666;
+  padding: 0.1rem 0.75rem;
+  cursor: pointer;
+  color: #666;
+  min-width: 60px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.42px;
+  transition: background 0.25s ease;
+}
+.filters .filter-option.active {
+  background: var(--background-1);
+  color: white;
+}
+.filters .filter-option:hover {
+  background: #f5f5f5d8;
+}
+.filters .filter-option.active:hover {
+  background: var(--background-1);
+}
+.filter-img:hover {
+  opacity: 0.85;
 }
 @media screen and (max-width: 1280px) {
   .main-wrapper,
